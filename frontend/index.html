@@ -10,26 +10,28 @@
   </head>
   <body>
 
-    <div class="mx-auto mt-5" style="width: 800px;">
+    <div class="mx-auto mt-4 px-1" style="max-width: 800px;">
 
         <h1 class="mb-4">Deepspeech Test Server</h1>
 
         <div class="card">
-            <div class="card-body">
-                <div class="row align-items-center justify-content-between">
-                    <div class="col">
+            <div class="card-body p-1 p-md-3">
+                <div class="row align-items-center justify-content-between mx-0">
+                    <div class="col-md px-0 py-2">
                         <span id="state"></span>
                     </div>
-                    <button class="col btn btn-primary" id="recordButton">Start Recording</button>
-                    <div class="col-auto">
-                        <div class="spinner-border invisible" role="status" id="spinner"></div>
+                    <div class="col-md row align-items-center">
+                      <button class="col btn btn-primary" id="recordButton">Start Recording</button>
+                      <div class="col-auto">
+                          <div class="spinner-border invisible" role="status" id="spinner"></div>
+                      </div>
                     </div>
-                    <div class="col text-end"> 
+                    <div class="col-md text-md-end px-0 py-2"> 
                         <a class="d-none" id="download">Download Recording</a>
                     </div>
                 </div>
                            
-                <div class="mt-3">
+                <div class="mt-3 ">
                     <textarea class="form-control" id="sstResult" rows="3" readonly></textarea>
                   </div>
             </div>

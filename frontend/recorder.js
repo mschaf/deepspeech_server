@@ -3,7 +3,7 @@ window.addEventListener('load', () => {
     let downloadLink = document.getElementById('download')
     let sttResult = document.getElementById('sstResult')
     let spinner = document.getElementById('spinner')
-    
+
     let state
     let mediaRecorder
     let recordedChunks
@@ -59,7 +59,7 @@ window.addEventListener('load', () => {
     }
 
     navigator.mediaDevices.getUserMedia({ audio: true, video: false }).then((stream) => {
-        mediaRecorder = new MediaRecorder(stream, { mimeType: 'audio/ogg;codecs=opus' });
+        mediaRecorder = new MediaRecorder(stream, { mimeType: 'audio/webm' });
 
         mediaRecorder.addEventListener('dataavailable', function(e) {
             if (e.data.size > 0) {
